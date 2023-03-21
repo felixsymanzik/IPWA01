@@ -1,0 +1,12 @@
+.header_logo {
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    margin-bottom: 6rem;
+  }
+  .header_logo_elements {
+    width: 150px;
+    height: 150px;
+  }
