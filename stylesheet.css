@@ -1,12 +1,244 @@
-.header_logo {
-    background-color: white;
-    padding: 2rem;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #87888fbc;
+    line-height: 1.4;
+    background-color: #d4d6dd;
+    margin: 0.3;
+}
+
+.container {
+    max-width: 1920;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/*header */
+.header_logo {
+    background-color: #d4d6dddd;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+    width: 100%;
+}
+
+.header_logo_elements {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+}
+
+
+
+.header_schrift {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 1rem;
+    color: #4a778c;
+    letter-spacing: 1px;
+}
+
+/* menu start */
+
+.navigation {
+    background-color: #d4d6dd;
+    margin-right: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+
+}
+
+.navigation ul {
+    /*margin: 0;
+    padding-left: 0;
+    display: flex;*/
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    /*padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;*/
+
+    display: block;
+    padding: 0.5rem;
+
+}
+
+
+/*legt Rahmen um den selektierten Nav-Eintrag*/
+.navigation a:hover,
+.navigation a:focus,
+.navigation a:active {
+    background-color: rgba(63, 59, 68, 0.297);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button bei großen Viewports ausblenden */
+[aria-controls="navi-liste"] {
+    display: none;
+}
+
+/* menu end */
+
+
+
+
+@media screen and (max-width: 520px) {
+    .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .header_logo {
+        padding: 0;
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .navigation ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .navigation li {
+        padding: 0;
+        border-bottom: 1px solid #87888fbc;
+    }
+
+    .navigation button {
+        position: absolute;
+        top: -1.5rem;
+    }
+
+    [aria-controls="navi-liste"] {
+        display: block;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    [aria-expanded="true"]~ul {
+        display: block;
+    }
+
+    [aria-expanded="false"] .geschlossen {
+        display: none;
+    }
+
+    [aria-expanded="true"] .geschlossen {
+        display: inline-block;
+    }
+
+    [aria-expanded="true"] .offen {
+        display: none;
+    }
+}
+
+/* main start*/
+
+.rahmen_zitat {
+
+    padding: 2rem;
+    margin: 2 rem;
+    background: black;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.zitat {
+    color: #d4d6dd;
+    line-height: 1.4;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+/*main end */
+
+/*footer start*/
+.navigation_footer {
+    /*padding: 0rem;*/
+    background-color:#87888fbc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*width: 100%;*/
+}
+
+.navigation_footer_elements {
+    margin: 0;
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
     align-items: right;
-    margin-bottom: 6rem;
-  }
-  .header_logo_elements {
-    width: 150px;
-    height: 150px;
-  }
+    list-style:none;
+    text-align: right;
+    /*width: 100%;*/
+}
+
+.footer_logo_elements{
+    width: 20px;
+    height: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.8rem;
+}
+.navigation_footer_link{
+    color: black;
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+}
+
