@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
     <header>
+        <div class="header_logo">
+            <img class="header_logo_elements" src="bilder/logo.tiff" alt="co2_footprint">
+            <h1 class="header_schrift">CO<sup>2</sup> Footprint</h1>
+        </div>
         <nav class="navigation">
-            <ul class="navigation_menue">
-                <li><a href="index.html" class="navi__link--aktuell navi__link">Start</a></li>
-                <li><a href="impressum.html" class="navi__link">Infos</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+            <button aria-expanded="false" aria-controls="navi-liste">
+                <span class="offen">☰</span>
+                <span class="geschlossen">×</span> Menü
+            </button>
+            <ul id="navi-liste">
+                <li><a href="index.html">Start</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h1>Hier steht das Impressum</h1>
+        <section>
+            <h1>Impressum</h1>
+            <p>Max Mustermann</p>
+            <p>Beispielstraße 3</p>
+            <p>12345 Musterhausen</p>
+            <p>Deutschland</p>
+            <p>Umsatzsteueridentifikationsnummer: 123AA111</p>
+
+        </section>
     </main>
     <footer>
         <nav class="navigation_footer">
             <ul class="navigation_footer_elements">
-                <li><a href="privacy.html">Datenschutz</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="privacy.html" class="navigation_footer_link">Datenschutz</a></li>
+                <li><a href="impressum.html" class="navigation_footer_link">Impressum</a></li>
+                <li><a href="contact.html" class="navigation_footer_link">Kontakt</a></li>
             </ul>
         </nav>
     </footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>

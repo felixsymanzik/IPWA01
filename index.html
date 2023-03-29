@@ -9,79 +9,130 @@
 </head>
 
 <body>
-    <!--<div class="container">-->
-        <header>
-            <div class="header_logo">
-                <img class="header_logo_elements" src="bilder/logo.tiff" alt="co2_footprint">
-                <h1 class="header_schrift">CO<sup>2</sup> Footprint</h1>
+
+    <header>
+        <div class="header_logo">
+            <img class="header_logo_elements" src="bilder/logo.tiff" alt="co2_footprint">
+            <h1 class="header_schrift">CO<sup>2</sup> Footprint</h1>
+        </div>
+        <nav class="navigation">
+            <button aria-expanded="false" aria-controls="navi-liste">
+                <span class="offen">☰</span>
+                <span class="geschlossen">×</span> Menü
+            </button>
+            <ul id="navi-liste">
+                <li><a href="index.html">Start</a></li>
+                <li><a href="#tabelle">Emissionstabelle</a></li>
+                <li><a href="#donate">Spenden</a></li>
+            </ul>
+
+
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <div class="rahmen_zitat">
+                <h1 class="zitat">Es wird wärmer. <br>Die Erde hat Fieber - und das Fieber steigt.</h1>
+
+                <img src="bilder/industry.jpg" class="rahmen_zitat">
+
+                <a>Albert 'Al' Gore, 10.12.2007</a>
+
             </div>
-            <nav class="navigation">
-                <button aria-expanded="false" aria-controls="navi-liste">
-                    <span class="offen">☰</span>
-                    <span class="geschlossen">×</span> Menü
-                </button>
-                <ul id="navi-liste">
-                    <li><a href="index.html">Start</a></li>
-                    <li><a href="#tabelle">Emissionstabelle</a></li>
-                    <li><a href="history.html">Geschichte</a></li>
-                    <li><a href="#donate">Spenden</a></li>
-                </ul>
+            <h1>Herzlich Willkommen bei CO<sup>2</sup> Footprint</h1>
+            <a>Wir windmen uns dem ehrgeizigen Ziel unser Klima zu schützen und den Menschen zu zeigen, welche
+                Firmen welchen CO<sup>2</sup> Ausstoß besitzen.
+                Um einen Überblick über den Ausstoß zu erhalten, können Sie unsere CO<sup>2</sup>-Tabelle nutzen und
+                überprüfen, wieviel CO<sup>2</sup> ein Unternehmen, bei dem Sie Kunde sind ausstößt.</p>
+
+        </section>
+        <section id="tabelle">
+
+            <h1>Emmissionstabelle</h1>
+            <div class="tabellen_rahmen">
+                <!--Filter-->
+                <p id="eingabe">
+                    <label><input type="search" class="filter-table" data-for="#foobar-table" autofocus="autofocus">
+                        Filter</label>
+                </p>
+                <table id="foobar-table">
+                    <thead>
+
+                        <tr>
+                            <th data-type="number" title="Nach Nummer sortieren">Nr.</th>
+                            <th data-type="string" title="Nach Firmenname sortieren">Firma</th>
+                            <th data-type="string" title="Nach Land sortieren">Land</th>
+                            <th data-type="number" title="Nach Ausstoß sortieren">Emmission*</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>BASV</td>
+                            <td>GER</td>
+                            <td>43</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Baier</td>
+                            <td>GER</td>
+                            <td>321</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Mischelen</td>
+                            <td>FR</td>
+                            <td>432</td>
+                        </tr>
 
 
-            </nav>
-            <!--</div>-->
-        </header>
-        <main>
-            <section>
-                <div class="rahmen_zitat">
-                    <h1 class="zitat">Es wird wärmer. <br>Die Erde hat Fieber - und das Fieber steigt.</h1>
-                    <a>Albert 'Al' Gore, 10.12.2007</a>
+                        <tr>
+                            <td>4</td>
+                            <td>Goddle</td>
+                            <td>USA</td>
+                            <td>222</td>
+                        </tr>
 
-                </div>
-                <p>Herzlich Willkommen bei CO<sup>2</sup> Footprint</p>
-                <p>Wir windmen uns dem ehrgeizigen Ziel unser Klima zu schützen und den Menschen zu zeigen, welche
-                    Firmen
-                    und aber auch Länder welchen CO<sup>2</sup> Ausstoß besitzen.</p>
-                <p>Um einen Überblick über den Ausstoß zu erhalten, können Sie unsere CO<sup>2</sup>-Tabelle nutzen und
-                    überprüfen, wieviel CO<sup>2</sup> ein Unternehmen, bei dem Sie Kunde sind ausstößt.</p>
+                        <tr>
+                            <td>5</td>
+                            <td>Monfanto</td>
+                            <td>USA</td>
+                            <td>543</td>
+                        </tr>
 
-            </section>
-            <section id="tabelle">
-                <p>Emmissionstabelle</p>
-                <img src="bilder/logo.tiff" alt="co2_footprint">
-            </section>
-            <section id="donate">
-                <p>Bitte spende!</p>
+                        <tr>
+                            <td>6</td>
+                            <td>Unileber</td>
+                            <td>GB</td>
+                            <td>612</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Emmission in Millionen t CO<sup>2</sup>/Jahr</p>
+            </div>
+        </section>
+        <section id="donate">
+            <h1>Bitte spende!</h1>
+            <p>Unsere Arbeit ist ehrenamtlich. Um weiterhin neutral arbeiten zu können, sind wir auf deine Spende
+                angewiesen. Hier kannst du spenden.</p>
 
-            </section>
-        </main>
-    <!--</div>-->
-        <footer>
-            <nav class="navigation_footer">
-                <ul class="navigation_footer_elements">
-                    <li><a href="privacy.html" class="navigation_footer_link">Datenschutz</a></li>
-                    <li><a href="impressum.html" class="navigation_footer_link">Impressum</a></li>
-                    <li><a href="contact.html" class="navigation_footer_link">Kontakt</a></li>
-                   <!-- <li><a href="https://www.facebook.com/co2_footprint2"><img class="footer_logo_elements"
-                                src="bilder/f_logo_RGB-Blue_512.png" alt="co2_footprint"></a></li>
-                    <li><a href="https://www.instagram.com/co2_footprint2"><img class="footer_logo_elements"
-                                src="bilder/Instagram_Glyph_Gradient.png" alt="co2_footprint"></a></li>-->
-                </ul>
-            </nav>
-        </footer>
-    
-    <script>
-        const hamburger = document.querySelector('button[aria-expanded]');
-
-        function klappNav({
-            target
-        }) {
-            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-            hamburger.setAttribute('aria-expanded', !expanded);
-        }
-
-        hamburger.addEventListener('click', klappNav);
-    </script>
+        </section>
+    </main>
+    <footer>
+        <nav class="navigation_footer">
+            <ul class="navigation_footer_elements">
+                <li><a href="privacy.html" class="navigation_footer_link">Datenschutz</a></li>
+                <li><a href="impressum.html" class="navigation_footer_link">Impressum</a></li>
+                <li><a href="contact.html" class="navigation_footer_link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

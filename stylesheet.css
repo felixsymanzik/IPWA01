@@ -13,15 +13,7 @@ body {
     margin: 0.3;
 }
 
-.container {
-    max-width: 1920;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+
 
 /*header */
 .header_logo {
@@ -30,9 +22,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     margin-top: 0rem;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .header_logo_elements {
@@ -59,27 +51,20 @@ body {
 
 .navigation {
     background-color: #d4d6dd;
-    margin-right: 0;
-    padding: 0;
+    margin-left: 0rem;
+    padding: 0rem;
     display: flex;
-    width: 100%;
 
 }
 
 .navigation ul {
-    /*margin: 0;
-    padding-left: 0;
+    /*
     display: flex;*/
     flex-wrap: wrap;
     list-style: none;
-    width: 100%;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+   
 }
 
 .navigation li {
@@ -87,16 +72,12 @@ body {
     -ms-flex: 1;
     flex: 1;
     text-align: center;
+    padding: 1rem;
 }
 
 .navigation a {
     color: black;
     text-decoration: none;
-    display: block;
-    /*padding: 0.8rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;*/
-
     display: block;
     padding: 0.5rem;
 
@@ -111,6 +92,11 @@ body {
 }
 
 img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
     max-width: 100%;
     height: auto;
 }
@@ -135,6 +121,7 @@ img {
 
     .header_logo {
         padding: 0;
+        margin-bottom: 1rem;
     }
 
     .navigation {
@@ -188,9 +175,8 @@ img {
 /* main start*/
 
 .rahmen_zitat {
-
-    padding: 2rem;
-    margin: 2 rem;
+    max-width: 100%;
+    padding: 0.3rem;
     background: black;
     align-items: center;
     text-align: center;
@@ -199,10 +185,28 @@ img {
 
 .zitat {
     color: #d4d6dd;
-    line-height: 1.4;
-    font-size: 2rem;
+    line-height: 1.1;
+    font-size: 1.3rem;
     align-items: center;
     text-align: center;
+}
+
+.rahmen_zitat img {
+    max-width: 100%;
+    max-height: 80%;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.tabellen_rahmen {
+    display:flex;
+    max-width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0rem;
+
 }
 
 /*main end */
@@ -210,7 +214,7 @@ img {
 /*footer start*/
 .navigation_footer {
     /*padding: 0rem;*/
-    background-color:#87888fbc;
+    background-color: #87888fbc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -223,22 +227,84 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: right;
-    list-style:none;
+    list-style: none;
     text-align: right;
     /*width: 100%;*/
 }
 
-.footer_logo_elements{
+.footer_logo_elements {
     width: 20px;
     height: 20px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     padding: 0.8rem;
 }
-.navigation_footer_link{
+
+.navigation_footer_link {
     color: black;
-  text-decoration: none;
-  display: block;
-  padding: 1rem;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
 }
 
+/* Tabelle */
+/* HTML-Tabelle sortieren */
+.filter-table {
+    margin-left: 2rem;
+}
+
+table#foobar-table {
+    margin-left: 2rem;
+}
+
+/* Tabellenkopf festsetzen */
+table#foobar-table thead {
+    position: sticky;
+    inset-block-start: 0;
+    user-select: none;
+}
+
+/* Hintergrund Tabellenkopf */
+table#foobar-table>thead>tr {
+    background-color: #87888fbc;
+}
+
+table#foobar-table>thead>tr>th:hover {
+    background-color: #afafb5bc;
+    cursor: pointer;
+}
+
+/* Die Spalten der Tabelle anpassen */
+table#foobar-table,
+table#foobar-table>thead>tr>th,
+table#foobar-table>tbody>tr>td {
+    border: Solid 1px #888888;
+    padding: 8px 11px 8px 11px;
+    color: #000000;
+}
+
+
+/* Hintergrundfarben */
+table#foobar-table>tbody>tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+table#foobar-table>tbody>tr:nth-child(odd) {
+    background-color: #d4d6dd;
+}
+
+/* Pfeil nach oben */
+.upArrow::after {
+    content: "\2191";
+    color: #040404;
+    text-shadow: 0.5px 0.5px 0px #000000;
+    position: absolute;
+}
+
+/* Pfeil nach unten */
+.dnArrow::after {
+    content: "\2193";
+    color: #040404;
+    text-shadow: 0.5px 0.5px 0px #000000;
+    position: absolute;
+}
