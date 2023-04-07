@@ -36,6 +36,8 @@ table {
     margin-top: 1rem;
     margin-right: 0rem;
     margin-left: 0rem;
+    align-items: right;
+    justify-content: right;
 }
 
 
@@ -58,6 +60,14 @@ table {
     display: flex;
     flex-direction: row-reverse;
 
+}
+
+.navigation_logo_elements {
+    width: 20px;
+    height: 20px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0rem;
 }
 
 .navigation ul {
@@ -114,6 +124,7 @@ table {
 
 
     }
+    arabisch
     .navigation {
       position: relative;
     }
@@ -178,7 +189,9 @@ table {
     align-items: center;
     text-align: center;
     justify-content: center;
-    
+}
+.rahmen_zitat{
+    color: #d4d6dd;
 }
 
 .zitat {

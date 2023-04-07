@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CO2 Footprint</title>
-    <link rel="stylesheet" href="stylesheet_arab.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <img class="header_logo_elements" src="bilder/logo.tiff" alt="co2_footprint">
             <h1 class="header_schrift">CO<sup>2</sup> Footprint</h1>
         </div>
-        <nav class="navigation">
+        <nav class="navigation_arab">
             <button aria-expanded="false" aria-controls="navi-liste">
                 <span class="offen">☰</span>
                 <span class="geschlossen">×</span>
@@ -25,6 +25,9 @@
                 <li><a href="index.html">Start</a></li>
                 <li><a href="#tabelle">Emissionstabelle</a></li>
                 <li><a href="#donate">Spenden</a></li>
+                <li><a><img class="navigation_logo_elements" src="bilder/sprache.tiff"></a></li>
+                <li><a hreflang="de" class="sprache_link" lang="de" href="index.html">deutsch</a></li>
+                <li><a hreflang="ar" class="sprache_link" lang="ar" href="arab.html">العربية</a></li>
             </ul>
 
 
@@ -60,75 +63,83 @@
                 </p>
                 <table id="foobar-table">
                     <thead>
-
                         <tr>
                             <th data-type="number" title="Nach Nummer sortieren">Nr.</th>
-                            <th data-type="string" title="Nach Firmenname sortieren">Firma</th>
-                            <th data-type="string" title="Nach Land sortieren">Land</th>
+                            <th data-type="string" title="Nach Land/Firma sortieren">Land/Firma</th>
                             <th data-type="number" title="Nach Ausstoß sortieren">Emmission*</th>
+                            <th data-type="string" title="Nach Typ sortieren">Typ</th>
                         </tr>
-
                     </thead>
                     <tbody>
-
                         <tr>
                             <td>1</td>
                             <td>BASV</td>
-                            <td>GER</td>
-                            <td>43</td>
+                            <td>0,000436</td>
+                            <td>Firma</td>
                         </tr>
-
                         <tr>
                             <td>2</td>
                             <td>Baier</td>
-                            <td>GER</td>
-                            <td>321</td>
+                            <td>0,000321</td>
+                            <td>Firma</td>
                         </tr>
-
                         <tr>
                             <td>3</td>
                             <td>Mischelen</td>
-                            <td>FR</td>
-                            <td>432</td>
+                            <td>0,000432</td>
+                            <td>Firma</td>
                         </tr>
-
-
                         <tr>
                             <td>4</td>
                             <td>Goddle</td>
-                            <td>USA</td>
-                            <td>222</td>
+                            <td>0,000222</td>
+                            <td>Firma</td>
                         </tr>
-
                         <tr>
                             <td>5</td>
                             <td>Monfanto</td>
-                            <td>USA</td>
-                            <td>543</td>
+                            <td>0,000543</td>
+                            <td>Firma</td>
                         </tr>
-
                         <tr>
                             <td>6</td>
                             <td>Unileber</td>
-                            <td>GB</td>
-                            <td>612</td>
+                            <td>0,000612</td>
+                            <td>Firma</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>China</td>
+                            <td>11300</td>
+                            <td>Land</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>USA</td>
+                            <td>5300</td>
+                            <td>Land</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Deutschland</td>
+                            <td>753</td>
+                            <td>Land</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Indien</td>
+                            <td>2600</td>
+                            <td>Land</td>
                         </tr>
                     </tbody>
                 </table>
-                <p>* Emmission in Millionen t CO<sup>2</sup>/Jahr</p>
+                <p>* Emmission in Mio. t CO<sup>2</sup>/Jahr</p>
             </div>
         </section>
         <section id="donate">
             <h1>Bitte spende!</h1>
             <p>Unsere Arbeit ist ehrenamtlich. Um weiterhin neutral arbeiten zu können, sind wir auf deine Spende
                 angewiesen. Hier kannst du spenden.</p>
-        </section>
-        <section id="sprache">
-            <h1>Sprachwahl</h1>
-            <ul>
-                <li><a hreflang="de" lang="de" href="index.html">deutsch</a></li>
-                <li><a hreflang="ar" lang="ar" href="arab.html">العربية</a></li>
-            </ul>
         </section>
     </main>
     <footer>

@@ -50,13 +50,21 @@ table {
 }
 /*header ende */
 /* menu start */
-
+/* deutsch */
 .navigation {
     background-color: #d4d6dd;
     margin-left: 0rem;
     padding: 0rem;
     display: flex;
 
+}
+
+.navigation_logo_elements {
+    width: 20px;
+    height: 20px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0rem;
 }
 
 .navigation ul {
@@ -88,6 +96,60 @@ table {
         background-color: grey;
     
     }
+
+/* arabisch */
+.navigation_arab {
+    background-color: #d4d6dd;
+    margin-left: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.navigation_logo_elements {
+    width: 20px;
+    height: 20px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 0rem;
+}
+
+.navigation_arab ul {
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    list-style: none;
+}
+
+.navigation_arab li {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right;
+    padding: 1rem;
+}
+
+.navigation_arab a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    align-items: right;
+    text-align: right;
+    justify-content: right;
+
+}
+
+.navigation_arab a:hover,
+      .navigation a:focus,
+      .navigation a:active {
+        background-color: grey;
+    
+    }
+
+
+
 
 /* Button bei großen Viewports ausblenden */
 [aria-controls="navi-liste"] {
@@ -139,6 +201,47 @@ table {
       display: none;
     }
     [aria-expanded="true"]~ul {
+        display: block;
+      }
+      [aria-expanded="false"] .geschlossen {
+        display: none;
+      }
+      [aria-expanded="true"] .geschlossen {
+        display: inline-block;
+      }
+      [aria-expanded="true"] .offen {
+        display: none;
+      }
+    /* arabisch */
+    .navigation_arab {
+        position: relative;
+      }
+      .navigation_arab ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+      }
+      .navigation_arab li {
+        padding: 0;
+        border-bottom: 1px solid grey;
+        text-align: left;
+      }
+      .navigation_arab button {
+        position: absolute;
+        top: -2.5rem;
+        border: none;
+        font-size: 20px;
+      }
+      [aria-controls="navi-liste"] {
+        display: block;
+      }
+      .navigation_arab ul {
+        display: none;
+      }
+    [aria-expanded="true"]~ul {
       display: block;
     }
     [aria-expanded="false"] .geschlossen {
@@ -174,6 +277,9 @@ table {
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+.rahmen_zitat{
+    color: #d4d6dd;
 }
 
 .zitat {
