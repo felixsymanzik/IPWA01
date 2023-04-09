@@ -165,11 +165,8 @@ table {
         width: 30px;
         height: 30px;
     }
-    
     .header_logo h1 {
         font-size: small;
-
-
     }
     .navigation {
       position: relative;
@@ -345,11 +342,11 @@ table {
 /* Tabelle */
 /* HTML-Tabelle sortieren */
 .filter-table {
-    margin-left: 2rem;
+    margin-left: 0.5rem;
 }
 
 table#foobar-table {
-    margin-left: 2rem;
+    margin-left: 0.5rem;
 }
 
 /* Tabellenkopf platzieren */
