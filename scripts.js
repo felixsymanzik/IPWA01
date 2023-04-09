@@ -1,13 +1,11 @@
   // klappbares Menü
     const klapp = document.querySelector('button[aria-expanded]');
-
     function klappNavigation({
         target
     }) {
         const expanded = target.getAttribute('aria-expanded') === 'true' || false;
         klapp.setAttribute('aria-expanded', !expanded);
     }
-
     klapp.addEventListener('click', klappNavigation);
 
 
