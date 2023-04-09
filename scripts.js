@@ -1,14 +1,14 @@
-  // Klapp Menue
-    const hamburger = document.querySelector('button[aria-expanded]');
+  // klappbares Menü
+    const klapp = document.querySelector('button[aria-expanded]');
 
-    function klappNav({
+    function klappNavigation({
         target
     }) {
         const expanded = target.getAttribute('aria-expanded') === 'true' || false;
-        hamburger.setAttribute('aria-expanded', !expanded);
+        klapp.setAttribute('aria-expanded', !expanded);
     }
 
-    hamburger.addEventListener('click', klappNav);
+    klapp.addEventListener('click', klappNavigation);
 
 
     //Tabelle filtern
