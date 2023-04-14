@@ -261,31 +261,31 @@ table {
     margin-left: 2rem;
 }
 
-table#foobar-table {
+table#em-table {
     margin-left: 2rem;
 }
 
 /* Tabellenkopf platzieren */
-table#foobar-table thead {
+table#em-table thead {
     position: sticky;
     inset-block-start: 0;
     user-select: none;
 }
 
 /* Hintergrundfarbe Tabellenkopf */
-table#foobar-table>thead>tr {
+table#em-table>thead>tr {
     background-color: #87888fbc;
 }
 
-table#foobar-table>thead>tr>th:hover {
+table#em-table>thead>tr>th:hover {
     background-color: #afafb5bc;
     cursor: pointer;
 }
 
 /* Tabellenspalten*/
-table#foobar-table,
-table#foobar-table>thead>tr>th,
-table#foobar-table>tbody>tr>td {
+table#em-table,
+table#em-table>thead>tr>th,
+table#em-table>tbody>tr>td {
     border: Solid 1px #888888;
     padding: 8px 11px 8px 11px;
     color: #4a778c;
@@ -293,11 +293,11 @@ table#foobar-table>tbody>tr>td {
 
 
 /* Hintergrundfarben */
-table#foobar-table>tbody>tr:nth-child(even) {
+table#em-table>tbody>tr:nth-child(even) {
     background-color: #FFFFFF;
 }
 
-table#foobar-table>tbody>tr:nth-child(odd) {
+table#em-table>tbody>tr:nth-child(odd) {
     background-color: #d4d6dd;
 }
 
