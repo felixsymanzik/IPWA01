@@ -10,7 +10,6 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 table {
@@ -69,7 +68,6 @@ table {
     flex-wrap: wrap;
     list-style: none;
     display: flex;
-    list-style: none;
 }
 
 .navigation li {
@@ -341,7 +339,6 @@ table {
     flex-wrap: wrap;
     align-items: right;
     list-style: none;
-    text-align: right;
 }
 
 .footer_logo_elements {
